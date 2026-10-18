@@ -1,0 +1,38 @@
+{
+  "levels": [
+    1,
+    20,
+    40,
+    60
+  ],
+  "seeds_per_configuration_level": 20,
+  "total_trials": 320,
+  "dt_seconds": 0.4,
+  "baseline_settings": {
+    "name": "baseline",
+    "population_size": 60,
+    "parent_count": 18,
+    "elite_count": 0,
+    "mutation_probability": 0.1,
+    "crossover": "uniform",
+    "tournament_size": 3,
+    "adaptive_mutation": false,
+    "stagnation_generations": 6,
+    "max_mutation_probability": 0.6
+  },
+  "improved_settings": {
+    "name": "improved",
+    "population_size": 60,
+    "parent_count": 15,
+    "elite_count": 3,
+    "mutation_probability": 0.3,
+    "crossover": "blend",
+    "tournament_size": 4,
+    "adaptive_mutation": true,
+    "stagnation_generations": 5,
+    "max_mutation_probability": 0.65
+  },
+  "chart_created": true,
+  "elapsed_wall_seconds": 22.654,
+  "scope_note": "Deterministic simulator using CoinTex level parameters. GUI play testing remains a separate final validation step."
+}
